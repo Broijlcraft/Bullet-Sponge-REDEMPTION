@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Health : MonoBehaviour {
-    [Header("Health - - - - - - - - - - - - - - - - - - - - - - -")]
+    [Header("Armor - - - - - - - - - - - - - - - - - - - - - - -")]
     public int startArmor;
     public RangeI armorSettings;
-    [Header("Armor - - - - - - - - - - - - - - - - - - - - - - -")]
+    [Header("Health - - - - - - - - - - - - - - - - - - - - - - -")]
     public int startHealth;
     public RangeI healthSettings;
 
@@ -31,12 +31,9 @@ public class Health : MonoBehaviour {
         if (isAlive) {
             if (currentArmor > armorSettings.min) {
                 currentArmor += value;
-                print("this");
                 if (currentArmor < armorSettings.min) {
-                print("this1");
                     value = currentArmor;
                 } else {
-                print("this2");
                     value = 0;
                 }
             }
