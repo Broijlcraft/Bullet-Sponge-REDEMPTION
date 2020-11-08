@@ -1,0 +1,2758 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2999072025279052137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2999072025279052136}
+  - component: {fileID: 2999072025279052141}
+  - component: {fileID: 2999072025279052142}
+  - component: {fileID: 2999072025279052143}
+  m_Layer: 5
+  m_Name: PauseMenu BackToMenu Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2999072025279052136
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072025279052137}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2999072026630665469}
+  m_Father: {fileID: 2999072026021165839}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 460, y: 110}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2999072025279052141
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072025279052137}
+  m_CullTransparentMesh: 0
+--- !u!114 &2999072025279052142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072025279052137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2999072025279052143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072025279052137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2999072025279052142}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2999072025908348768}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &2999072025380709279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2999072025380709278}
+  - component: {fileID: 2999072025380709267}
+  - component: {fileID: 2999072025380709276}
+  - component: {fileID: 2999072025380709277}
+  m_Layer: 5
+  m_Name: PauseMenu OptionsGame Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2999072025380709278
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072025380709279}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2999072025803129725}
+  m_Father: {fileID: 2999072026021165839}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 460, y: 110}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2999072025380709267
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072025380709279}
+  m_CullTransparentMesh: 0
+--- !u!114 &2999072025380709276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072025380709279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2999072025380709277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072025380709279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2999072025380709276}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2999072026021165832}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3837224889603567097}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!1 &2999072025416576385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2999072025416576384}
+  - component: {fileID: 2999072025416576390}
+  - component: {fileID: 2999072025416576391}
+  m_Layer: 5
+  m_Name: PauseMenu Title Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2999072025416576384
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072025416576385}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2999072026886130675}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2999072025416576390
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072025416576385}
+  m_CullTransparentMesh: 0
+--- !u!114 &2999072025416576391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072025416576385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 1
+    m_MaxSize: 50
+    m_Alignment: 4
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Game Paused
+--- !u!1 &2999072025803129726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2999072025803129725}
+  - component: {fileID: 2999072025803129715}
+  - component: {fileID: 2999072025803129724}
+  m_Layer: 5
+  m_Name: PauseMenu OptionsGame Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2999072025803129725
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072025803129726}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2999072025380709278}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2999072025803129715
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072025803129726}
+  m_CullTransparentMesh: 0
+--- !u!114 &2999072025803129724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072025803129726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 50
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Settings
+--- !u!1 &2999072025908348768
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2999072025908348775}
+  m_Layer: 5
+  m_Name: Pause Menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2999072025908348775
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072025908348768}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2999072027122303545}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2999072026021165832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2999072026021165839}
+  - component: {fileID: 2999072026021165836}
+  - component: {fileID: 2999072026021165837}
+  - component: {fileID: 2999072026021165838}
+  m_Layer: 5
+  m_Name: PauseMenu Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2999072026021165839
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072026021165832}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2999072026886130675}
+  - {fileID: 2999072026077349152}
+  - {fileID: 2999072025380709278}
+  - {fileID: 2999072025279052136}
+  m_Father: {fileID: 2999072027122303545}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.35, y: 0.2}
+  m_AnchorMax: {x: 0.65, y: 0.8}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2999072026021165836
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072026021165832}
+  m_CullTransparentMesh: 0
+--- !u!114 &2999072026021165837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072026021165832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2999072026021165838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072026021165832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 10
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+--- !u!1 &2999072026077349153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2999072026077349152}
+  - component: {fileID: 2999072026077349157}
+  - component: {fileID: 2999072026077349158}
+  - component: {fileID: 2999072026077349159}
+  m_Layer: 5
+  m_Name: PauseMenu ResumeGame Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2999072026077349152
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072026077349153}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2999072026788400189}
+  m_Father: {fileID: 2999072026021165839}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 460, y: 110}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2999072026077349157
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072026077349153}
+  m_CullTransparentMesh: 0
+--- !u!114 &2999072026077349158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072026077349153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2999072026077349159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072026077349153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2999072026077349158}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2999072025908348768}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &2999072026630665470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2999072026630665469}
+  - component: {fileID: 2999072026630665459}
+  - component: {fileID: 2999072026630665468}
+  m_Layer: 5
+  m_Name: PauseMenu BackToMenu Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2999072026630665469
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072026630665470}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2999072025279052136}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2999072026630665459
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072026630665470}
+  m_CullTransparentMesh: 0
+--- !u!114 &2999072026630665468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072026630665470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 50
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Quit Game
+--- !u!1 &2999072026788400190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2999072026788400189}
+  - component: {fileID: 2999072026788400179}
+  - component: {fileID: 2999072026788400188}
+  m_Layer: 5
+  m_Name: PauseMenu ResumeGame Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2999072026788400189
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072026788400190}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2999072026077349152}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2999072026788400179
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072026788400190}
+  m_CullTransparentMesh: 0
+--- !u!114 &2999072026788400188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072026788400190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 50
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Resume Game
+--- !u!1 &2999072026886130684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2999072026886130675}
+  - component: {fileID: 2999072026886130673}
+  - component: {fileID: 2999072026886130674}
+  m_Layer: 5
+  m_Name: PauseMenu Title BackGround
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2999072026886130675
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072026886130684}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2999072025416576384}
+  m_Father: {fileID: 2999072026021165839}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 460, y: 75}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2999072026886130673
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072026886130684}
+  m_CullTransparentMesh: 0
+--- !u!114 &2999072026886130674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072026886130684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &2999072027122303546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2999072027122303545}
+  - component: {fileID: 2999072027122303551}
+  - component: {fileID: 2999072027122303544}
+  m_Layer: 5
+  m_Name: Pause Menu BackGround
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2999072027122303545
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072027122303546}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2999072026021165839}
+  - {fileID: 2522169746070044920}
+  - {fileID: 3878066240746573220}
+  m_Father: {fileID: 2999072025908348775}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2999072027122303551
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072027122303546}
+  m_CullTransparentMesh: 0
+--- !u!114 &2999072027122303544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999072027122303546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: e8595f4fab8f8fe4bb203869286f17ab, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1001 &1173884230825809286
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2999072027122303545}
+    m_Modifications:
+    - target: {fileID: 134054860845961297, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Title Text (Audio) (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 214079896048778857, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Size
+      value: 0.79276407
+      objectReference: {fileID: 0}
+    - target: {fileID: 405111539360988194, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Item Checkmark (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 466043366447579100, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio Main Volume Background (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 488201225188843595, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Arrow (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 619921139681956561, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Text (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 648228622489293242, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 648228622489293242, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 648228622489293242, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 648228622489293242, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001958859761095815, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality QualitySettings Viewport (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042478828765784697, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042478828765784697, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042478828765784697, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042478828765784697, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042478828906951024, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042478828906951024, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042478828906951024, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042478828906951024, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042478829070227982, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042478829070227982, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042478829070227982, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042478829070227982, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042478829070227982, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1056927887685613789, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SetingsTab Panel (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1056927887685613789, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059998932962035030, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059998932962035030, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251799918331404997, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251799918331404997, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251799918331404997, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251799918331404997, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251799918477031884, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251799918477031884, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251799918477031884, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251799918477031884, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251799918637746619, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251799918637746619, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251799918637746619, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251799918637746619, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251799918637746619, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409775621339364431, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409775621339364431, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409775621339364431, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419670329990003263, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Sliding Area (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537063048273097974, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Shadows Tab (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625636648473168277, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Scrollbar (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644713611326119052, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality QualitySettings Item (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648537709068190277, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648537709068190277, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648537709068190277, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648537709068190277, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648537709068190277, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648537709068190277, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648537709068190277, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1684115461260760274, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality FullScreen Dropdown (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1722813991049612168, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Title BackGround (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760494253540224889, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Template (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813277280861685581, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813277280861685581, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813277280861685581, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813277280861685581, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1917430020487221543, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Scrollbar (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069488013488987049, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069488013488987049, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069488013488987049, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069488013488987049, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069488013613629600, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069488013613629600, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069488013613629600, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069488013613629600, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069488013787082967, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069488013787082967, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069488013787082967, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069488013787082967, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069488013787082967, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085380161952769022, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085380161952769022, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085380161952769022, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140845407995028476, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Label (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147921985640850435, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147921985640850435, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147921985640850435, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147921985640850435, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211523899058410688, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio Main Volume (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221595700543166907, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221595700543166907, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221595700543166907, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221595700543166907, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295444087872048181, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality FullScreen Arrow (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2311026715205473772, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2311026715205473772, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2311026715205473772, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2311026715205473772, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346852490210984676, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio Music Volume Fill Area (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2370323446443685890, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab KeyBinds Panel Left (Movement) (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2392541132376197849, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Label (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526743855658915505, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Shadow Dropdown (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2535421795422907758, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab KeyBinds Panel Right (Movement) (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2626597866245230055, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality QualitySettings Sliding Area (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2628905777512895219, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab KeyBinds (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2628905777512895219, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779518054847030550, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab KeyBindings Panel (Combat) (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2804993645626092438, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality QualitySettings Item Background (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851324889664989806, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality QualitySettings Item Checkmark (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2896156874921707096, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.20723593
+      objectReference: {fileID: 0}
+    - target: {fileID: 2896156874921707096, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2896156874921707096, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2930838703310712649, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2930838703310712649, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2930838703310712649, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2930838703310712649, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2987320445069855791, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: Settings Tabs (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3021836647881724683, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3021836647881724683, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3021836647881724683, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3164178838309844798, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3164178838309844798, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3164178838309844798, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 172.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3164178838309844798, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -119.78934
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228211216366915748, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio Music Volume Text (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230357999773635391, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio Music Volume Fill (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3239283172605469851, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3239283172605469851, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3239283172605469851, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3239283172605469851, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3271046811320765734, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio Main Volume Handle Slide Area (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3288625695241849715, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality FullScreen Label (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3308829025092171783, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Handle (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3368120491978378029, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3672979182451979551, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Sliding Area (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744944138320760436, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality FullScreen Text (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829830449746747928, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality QualitySettings Arrow (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3948583128503333077, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Item Background (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988440846379004085, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988440846379004085, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3994799539843521342, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Panel Right (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044830349721975250, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Tab (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4124308566791432732, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio Music Volume (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4265484672696326684, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio Panel (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297485654182236968, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Item (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403264912596686298, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Item Label (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4480202113020260180, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio Main Volume Handle (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496204856212392773, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio SFX Volume Fill Area (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545051935208794295, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality FullScreen Scrollbar (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4631642220413237694, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Viewport (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653907554347116889, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653907554347116889, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736304999304699302, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Title Text (KeyBinds) (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758270270797237426, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality FullScreen Viewport (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937700864892074315, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Dropdown (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036643542893041701, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio SFX Volume Slider (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5255463199881866742, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5255463199881866742, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5255463199881866742, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5255463199881866742, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5255463200026441471, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5255463200026441471, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5255463200026441471, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5255463200026441471, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5255463201798948488, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5255463201798948488, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5255463201798948488, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5255463201798948488, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5255463201798948488, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5289038529211818983, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality QualitySettings Template (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5529813831343248029, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5529813831343248029, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5529813831343248029, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5529813831343248029, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689338324526090936, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio Music Volume Background (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766065126346835188, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772058304595218748, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio SFX Volume Text (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782054431559451483, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Content (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908066536678264295, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality FullScreen Content (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5977837629597896324, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Panel Left (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6051695092663307799, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio Music Volume Handle Slide Area (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6085864140647314505, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Viewport (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207676877323948918, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Item Label (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6237966551724206034, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality FullScreen Item Label (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351060063046819177, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality QualitySettings Text (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6368702997595610964, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio SFX Volume Handle Slide Area (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6426162018618015812, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab KeyBindings Panel (Movement) (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6483999348528878089, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality FullScreen Template (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501633882316381898, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501633882316381898, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501633882316381898, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501633882316381898, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -97.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6546424950384389344, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6546424950384389344, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741857334568882991, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741857334568882991, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741857334568882991, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741857334568882991, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741857334713714726, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741857334713714726, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741857334713714726, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741857334713714726, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741857335481508696, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741857335481508696, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741857335481508696, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741857335481508696, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741857335481508696, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6767371070809242226, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Arrow (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6800409354727219823, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio Music Volume Slider (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803979611207469530, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio Main Volume Fill (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6835315170867055928, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality QualitySettings Handle (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889120700408841009, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889120700408841009, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889120700408841009, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 172.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889120700408841009, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -558.94666
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946453601873227454, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality FullScreen Item (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960546631562625785, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Handle (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6966697755894051225, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio Music Volume Handle (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038184125627203070, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio SFX Volume (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098835068312437014, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Template (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7106685342045603145, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality QualitySettings Dropdown (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317451158613457866, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio SFX Volume Background (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7427174656402632647, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality FullScreen Sliding Area (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545074910319231731, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio Main Volume Slider (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593385817096898989, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality FullScreen Item Checkmark (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7707585732506638887, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality QualitySettings Scrollbar (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721867725255727008, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality FullScreen Item Background (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840392616933688854, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio Main Volume Fill Area (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7905333957015012994, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Shadow Text (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7944850762759338983, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Title Text (Quality) (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7968422429047949114, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Content (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976410325477687296, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976410325477687296, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976410325477687296, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976410325477687296, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976410325605227273, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976410325605227273, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976410325605227273, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976410325605227273, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976410326372495479, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976410326372495479, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976410326372495479, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976410326372495479, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976410326372495479, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205691796869923952, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Item Background (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8209357837140682864, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality QualitySettings Tab (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215395166504636975, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality FullScreen Handle (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224883994827565883, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224883994827565883, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8298273896826521023, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8298273896826521023, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8298273896826521023, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8298273896826521023, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310312576175579946, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality QualitySettings Content (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369438234270783951, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio Main Volume Text (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449955267494951686, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449955267494951686, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449955267494951686, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 172.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449955267494951686, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -339.368
+      objectReference: {fileID: 0}
+    - target: {fileID: 8561713945460616926, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality FullScreen Tab (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576175698778508627, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio Main Volume Amount Text (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690270776289875367, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality QualitySettings Label (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8734554781238180436, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio SFX Volume Fill (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820692859337653079, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio Music Volume Amount Text (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8858296197802303097, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8858296197802303097, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8858296197802303097, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 135
+      objectReference: {fileID: 0}
+    - target: {fileID: 8858296197802303097, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8858296197802303097, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 8858296197802303097, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8898702507838935214, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8898702507838935214, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8919237385003207926, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality QualitySettings Item Label (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8954720488495182647, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio SFX Volume Amount Text (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8986460807136055455, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Audio SFX Volume Handle (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9068486520622452501, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Item (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9126827391416065867, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.9999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 9126827391416065867, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9140993537090368550, guid: 56a40954c8e32c347bce2c63893ccc2c,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsTab Quality Resolution Item Checkmark (PS)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 56a40954c8e32c347bce2c63893ccc2c, type: 3}
+--- !u!224 &3878066240746573220 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2709990292058822690, guid: 56a40954c8e32c347bce2c63893ccc2c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1173884230825809286}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5378140710604512342
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2999072027122303545}
+    m_Modifications:
+    - target: {fileID: 1066259800700499904, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_Name
+      value: Back to Menu Button (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318514135551516142, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Settings Text (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396481215669555803, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Settings Button (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420843966815232449, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420843966815232449, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420843966815232449, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 259.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420843966815232449, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -405
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091890088750389342, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_Name
+      value: Back to menu Text (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4764615966098024876, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_Name
+      value: Keybinds Settings Button (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502227884397187254, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_Name
+      value: Quality Settings Button (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5930714324920106426, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5930714324920106426, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5930714324920106426, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 259.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5930714324920106426, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -567
+      objectReference: {fileID: 0}
+    - target: {fileID: 5957763242739460550, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5957763242739460550, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5957763242739460550, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 259.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5957763242739460550, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -243
+      objectReference: {fileID: 0}
+    - target: {fileID: 6171114717910484725, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_Name
+      value: Keybinds Settings Text (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768751636763869809, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_Name
+      value: Quality Settings Text (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825582396051374078, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825582396051374078, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825582396051374078, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 259.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825582396051374078, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -81
+      objectReference: {fileID: 0}
+    - target: {fileID: 9215052924306960815, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_Name
+      value: Settings Panel (PS)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9215052924306960815, guid: c4020d0c390c33244abfd68b0e85846e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c4020d0c390c33244abfd68b0e85846e, type: 3}
+--- !u!1 &3837224889603567097 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9215052924306960815, guid: c4020d0c390c33244abfd68b0e85846e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5378140710604512342}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &2522169746070044920 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7611772206474337454, guid: c4020d0c390c33244abfd68b0e85846e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5378140710604512342}
+  m_PrefabAsset: {fileID: 0}
