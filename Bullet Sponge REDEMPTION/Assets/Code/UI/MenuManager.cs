@@ -6,11 +6,34 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
+    #region Singleton
+    public static MenuManager single;
+    private void Awake()
+    {
+        if(single == null)
+        {
+            single = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+    #endregion
+
+    #region MainMenu
     public void StartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+    #endregion
 
+    #region QualitySettings
     string[] QualityNames;
     List<Resolution> res = new List<Resolution>();
 
@@ -87,9 +110,19 @@ public class MenuManager : MonoBehaviour
     {
         QualitySettings.SetQualityLevel(qualityIndex);
     }
+    #endregion
 
-    public void QuitGame()
+    #region KeyBinds
+
+    private bool runningToggle;
+    public void SetRunningToggle(bool toggle)
     {
-        Application.Quit();
+         runningToggle = toggle;
     }
+
+    public bool GetRunningToggle()
+    {
+        return runningToggle;
+    }
+    #endregion
 }
