@@ -31,5 +31,9 @@ public class RandomMatEditor : Editor {
             Debug.LogWarning($"Successfully randomized {i} meshrenderers, don't forget to save!");
         }
     }
+
+    public static void Test() {
+
+    }
 }
 #endif
