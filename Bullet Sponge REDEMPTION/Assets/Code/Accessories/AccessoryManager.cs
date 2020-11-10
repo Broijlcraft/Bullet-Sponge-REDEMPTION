@@ -15,9 +15,6 @@ public class AccessoryManager : MonoBehaviour {
         } else {
             single_AM = this;
         }
-    }
-
-    private void Start() {
         Init();
     }
 
