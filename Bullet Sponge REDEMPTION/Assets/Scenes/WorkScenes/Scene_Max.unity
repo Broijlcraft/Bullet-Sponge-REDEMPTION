@@ -2275,6 +2275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a98a368f29ccdd42a22eaaac59548e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  accessories: []
 --- !u!4 &1672484273
 Transform:
   m_ObjectHideFlags: 0
@@ -2551,7 +2552,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f966610eef730429d8c6efe4127ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  accessoryParent: {fileID: 754176895}
+  accessoryPoints:
+  - accessoryParent: {fileID: 754176895}
+    accessory: {fileID: 0}
 --- !u!65 &1863975987
 BoxCollider:
   m_ObjectHideFlags: 0
