@@ -4,7 +4,16 @@ using UnityEngine;
 
 public class PlayerMovement : MovementBase
 {
+    bool jump;
     private void Update()
+    {
+        CheckIfOnGround(bottemOfCharacter);
+        if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            jump = true;
+        }
+    }
+    private void FixedUpdate()
     {
         CollectInput();
     }
@@ -12,7 +21,9 @@ public class PlayerMovement : MovementBase
     {
         SetHor(Input.GetAxis("Horizontal"));
         SetVer(Input.GetAxis("Vertical"));
-
+        
+        ApplyGravity();
+        ApplyJump();
         ApplyMovement(GetHor(), GetVer());
     }
 
@@ -34,14 +45,14 @@ public class PlayerMovement : MovementBase
     {
         if (!IsMoving())
         {
-            isRunning = false;
+            SetIsRunning(false);
             return false;
         }
         if (MenuManager.single.GetRunningToggle())
         {
-            if (Input.GetButtonDown("Sprint")|| isRunning)
+            if (Input.GetButtonDown("Sprint")|| GetIsRunning())
             {
-                isRunning = true;
+                SetIsRunning(true);
                 return true;
             }
             else
@@ -53,28 +64,28 @@ public class PlayerMovement : MovementBase
         {
             if (Input.GetButton("Sprint"))
             {
-                isRunning = true;
+                SetIsRunning(true);
                 return true;
             }
             else
             {
-                isRunning = false;
+                SetIsRunning(false);
                 return false;
             }
         }
     }
 
-    public bool IsMoving()
+    public void ApplyJump()
     {
-        Debug.Log(Mathf.Approximately(GetHor(), 0));
-        Debug.Log(Mathf.Approximately(GetVer(), 0));
-        if(Mathf.Approximately(GetHor(), 0) && Mathf.Approximately(GetVer(), 0))
+        if (jump)
         {
-            return false;
+            GetRigidbody().velocity = Vector3.zero;
+            GetRigidbody().velocity = Vector3.up * -jumpVelocity * Physics.gravity.y;
+            jump = false;
         }
-        else
-        {
-            return true;
-        }
+    }
+    private void OnDrawGizmosSelected()
+    {
+        Debug.DrawRay(bottemOfCharacter.position, Vector3.down * 100f, Color.red);
     }
 }
