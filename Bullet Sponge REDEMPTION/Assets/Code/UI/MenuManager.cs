@@ -33,6 +33,10 @@ public class MenuManager : MonoBehaviour
     }
     #endregion
 
+    #region PauseMenu
+    
+    #endregion
+
     #region QualitySettings
     string[] QualityNames;
     List<Resolution> res = new List<Resolution>();
@@ -109,6 +113,18 @@ public class MenuManager : MonoBehaviour
     public void SetQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
+    }
+    #endregion
+
+    #region AudioSettings
+    public void GetCurrentVolume()
+    {
+
+    }
+
+    public void SetVolume()
+    {
+
     }
     #endregion
 

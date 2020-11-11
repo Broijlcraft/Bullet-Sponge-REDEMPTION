@@ -140,7 +140,6 @@ public class MovementBase : MonoBehaviour
 
             if(hit.transform.CompareTag("GroundSpawnPoints"))
             {
-                Debug.Log(hit.transform.name);  
                 lastPosOnMap = hit.point;
             }
 
