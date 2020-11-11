@@ -29,8 +29,10 @@ public class MovementBase : MonoBehaviour
     [Header("HideinInspector")]
     public bool isRunning;
     public bool isGrounded;
-    private float hor, ver;
-    private float currentSpeed;
+
+    protected float hor, ver;
+    protected float currentSpeed;
+
     public LayerMask groundLayer;
     public LayerMask actualGoundLayer;
 
