@@ -134,7 +134,7 @@ public class CameraRotation : MonoBehaviour
     private void ApplyMouseRotation()
     {
         xAxisClamp += GetVerticalAxis();
-        Debug.Log(GetVerticalAxis());
+
         camHolder.transform.Rotate(Vector3.up * GetHorizontalAxis(), Space.World);
 
         CameraClamp();

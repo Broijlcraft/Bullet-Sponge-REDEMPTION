@@ -4,24 +4,33 @@ using UnityEngine;
 
 public class PlayerMovement : MovementBase
 {
+    public GameObject playerModel;
     bool jump;
     private void Update()
     {
+        CollectInputs();
+
         CheckIfOnGround(bottemOfCharacter);
+
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             jump = true;
         }
+
     }
     private void FixedUpdate()
     {
-        CollectInput();
+        ApplyInputs();
     }
-    public void CollectInput()
+
+    private void CollectInputs()
     {
         SetHor(Input.GetAxis("Horizontal"));
         SetVer(Input.GetAxis("Vertical"));
-        
+    }
+
+    public void ApplyInputs()
+    {
         ApplyGravity();
         ApplyJump();
         ApplyMovement(GetHor(), GetVer());
@@ -29,16 +38,30 @@ public class PlayerMovement : MovementBase
 
     public void ApplyMovement(float horizontalInput, float verticalInput)
     {
-        Vector3 movement = new Vector3(horizontalInput,0,verticalInput);
+        PlayerRotation pRot = GetComponent<PlayerRotation>();
+
+        Vector3 move = pRot.GetDirection(horizontalInput, verticalInput);
+
+        if (!IsMoving())
+        {
+            return;
+        }
+
+        pRot.SetPlayerRotation(move,playerModel);
 
         if (RunningCheck())
         {
-            transform.Translate(movement * Time.deltaTime * sprintSpeed);
+            TranslateMovement(sprintSpeed);
         }
         else
         {
-            transform.Translate(movement * Time.deltaTime * walkSpeed);
+            TranslateMovement(sprintSpeed);
         }
+    }
+
+    public void TranslateMovement(float multiplier)
+    {
+        transform.Translate(playerModel.transform.forward * Time.deltaTime * multiplier);
     }
 
     public bool RunningCheck()
@@ -83,9 +106,5 @@ public class PlayerMovement : MovementBase
             GetRigidbody().velocity = Vector3.up * -jumpVelocity * Physics.gravity.y;
             jump = false;
         }
-    }
-    private void OnDrawGizmosSelected()
-    {
-        Debug.DrawRay(bottemOfCharacter.position, Vector3.down * 100f, Color.red);
     }
 }
