@@ -5,18 +5,18 @@ using UnityEngine;
 public class NoClipMovement : MonoBehaviour {
     [Range(1, 20)]
     public int speed;
-    public float turnSpeed;
+    public float turnSpeed = 120f;
 
-    public int fontSize;
-    public float outline;
+    public int fontSize = 75;
+    public float outline = 15f;
     [Space]
-    public float width;
-    public float height;
-    public float x, y;
+    public float width = 200f;
+    public float height = 200f;
+    public float x = 100f, y = 100f;
 
     [Space]
-    public float waitForFade;
-    public TextAnchor anchor;
+    public float waitForFade = 1f;
+    public TextAnchor anchor = TextAnchor.MiddleCenter;
 
     string text;
     Coroutine lastCoroutine = null;
