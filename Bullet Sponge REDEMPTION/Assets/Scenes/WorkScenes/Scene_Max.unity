@@ -3212,7 +3212,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  turnSpeed: 30
+  turnSpeed: 120
+  text: Test
+  fontSize: 75
+  outline: 15
+  width: 200
+  height: 200
+  x: 100
+  y: 100
+  waitForFade: 1
+  anchor: 4
 --- !u!1 &1790183944280864957
 GameObject:
   m_ObjectHideFlags: 0
