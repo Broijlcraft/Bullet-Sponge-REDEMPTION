@@ -15,6 +15,7 @@ public class CameraRotation : MonoBehaviour
     [Header("Misc")]
     public GameObject camHolder;
     float xAxisClamp;
+    public bool mouseClamp;
 
     protected float cHor, cVer;
     public float mouseXSensitivity, mouseYSensitivity;
@@ -95,7 +96,22 @@ public class CameraRotation : MonoBehaviour
     #endregion
 
 
-    // Update is called once per frame
+    private void Start()
+    {
+        if (mouseClamp)
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+    }
+
+    private void Update()
+    {
+        SetHorizontalAxis(Input.GetAxis("Mouse X") * GetXSensitivity() * Time.deltaTime * mouseRotateSpeed);
+        SetVerticalAxis(Input.GetAxis("Mouse Y") * GetYSensitivity() * Time.deltaTime * mouseRotateSpeed);
+        CheckForInvert();
+    }
+
     void FixedUpdate()
     {
         GetMouseInput();
@@ -103,11 +119,6 @@ public class CameraRotation : MonoBehaviour
 
     public void  GetMouseInput()
     {
-        SetHorizontalAxis(Input.GetAxis("Mouse X") * GetXSensitivity() * Time.deltaTime * mouseRotateSpeed);
-        SetVerticalAxis(Input.GetAxis("Mouse Y") * GetYSensitivity() * Time.deltaTime * mouseRotateSpeed);
-
-        CheckForInvert();
-
         ApplyMouseRotation();
     }
 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MovementBase
 {
     public GameObject playerModel;
-    bool jump;
+
     private void Update()
     {
         CollectInputs();
@@ -14,9 +14,8 @@ public class PlayerMovement : MovementBase
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            jump = true;
+            ApplyJump();
         }
-
     }
     private void FixedUpdate()
     {
@@ -32,7 +31,6 @@ public class PlayerMovement : MovementBase
     public void ApplyInputs()
     {
         ApplyGravity();
-        ApplyJump();
         ApplyMovement(GetHor(), GetVer());
     }
 
@@ -47,7 +45,7 @@ public class PlayerMovement : MovementBase
             return;
         }
 
-        pRot.SetPlayerRotation(move,playerModel);
+        pRot.SetPlayerRotation(move, playerModel);
 
         if (RunningCheck())
         {
@@ -73,7 +71,7 @@ public class PlayerMovement : MovementBase
         }
         if (MenuManager.single.GetRunningToggle())
         {
-            if (Input.GetButtonDown("Sprint")|| GetIsRunning())
+            if (Input.GetButtonDown("Sprint") || GetIsRunning())
             {
                 SetIsRunning(true);
                 return true;
@@ -100,11 +98,7 @@ public class PlayerMovement : MovementBase
 
     public void ApplyJump()
     {
-        if (jump)
-        {
-            GetRigidbody().velocity = Vector3.zero;
-            GetRigidbody().velocity = Vector3.up * -jumpVelocity * Physics.gravity.y;
-            jump = false;
-        }
+        GetRigidbody().velocity = Vector3.zero;
+        GetRigidbody().velocity = Vector3.up * -jumpVelocity * Physics.gravity.y;
     }
 }
