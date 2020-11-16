@@ -14,10 +14,6 @@ public class GunBase : MonoBehaviour
     public int maxBulletAmmoCount;
     public int bulletsPerShot = 1;
 
-    [Header("If Multiple Bullets Shot")]
-    public float spread;
-    public float delayBetweenBulletShot;
-
     [Header("Misc")]
     public float hitMarkTimer = 5f;
     public LayerMask gunLayer;
@@ -28,25 +24,25 @@ public class GunBase : MonoBehaviour
     Quaternion startingRot;
 
     protected bool coolDown;
-    protected int currentBulletAmount;
+    protected int currentBulletAmmoCount;
 
     #region Get
     protected int GetCurrentBulletAmount()
     {
-        int curBul = currentBulletAmount;
+        int curBul = currentBulletAmmoCount;
         return curBul;
     }
 
     protected void SetCurrentBulletAmount(int newBulletAmount)
     {
-        currentBulletAmount = newBulletAmount;
+        currentBulletAmmoCount = newBulletAmount;
         UpdateBulletCounter();
     }
     #endregion 
 
     private void Start()
     {
-        currentBulletAmount = maxBulletAmmoCount;
+        currentBulletAmmoCount = maxBulletAmmoCount;
         UpdateBulletCounter();
         startingRot = transform.localRotation;
     }
@@ -100,14 +96,35 @@ public class GunBase : MonoBehaviour
         Invoke(nameof(CoolDown), fireRate);
     }
 
-    //public virtual void SpreadShot()
-    //{
-    //    if(Physics.Raycast(firePoint.position,transform.forward,))
-    //}
+    public virtual void SpreadShot()
+    {
+        SetGunRotation();
+        for (int i = 0; i < bulletsPerShot; i++)
+        {
+            Vector3 dir = firePoint.transform.forward;
+            Vector3 spread = Vector3.zero;
+            spread += firePoint.transform.up * Random.Range(-.5f, .5f);
+            spread += firePoint.transform.right * Random.Range(-.5f, .5f);
+
+            dir += spread.normalized * Random.Range(0f, 0.2f);
+
+            if (Physics.Raycast(firePoint.position,dir, out RaycastHit hit, range, gunLayer))
+            {
+                GameObject newDecal = Instantiate(bulletHole, hit.point, hit.transform.rotation);
+                Destroy(newDecal, hitMarkTimer);
+            }
+            else
+            {
+                Debug.DrawRay(firePoint.transform.position, dir * range, Color.red);
+            }
+        }
+        coolDown = true;
+        Invoke(nameof(CoolDown), fireRate);
+    }
 
     public virtual void Reload()
     {
-        currentBulletAmount = maxBulletAmmoCount;
+        currentBulletAmmoCount = maxBulletAmmoCount;
         UpdateBulletCounter();
     }
 
