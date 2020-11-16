@@ -5,14 +5,17 @@ using UnityEngine;
 
 public class CameraRotation : MonoBehaviour
 {
-    [Header("CameraSpeed")]
+    [Header("CameraSettings")]
     public float mouseRotateSpeed;
+    public float minFOV;
+    float maxFOV;
 
     [Header("Clamp Settings")]
     public float topClamp = 50f;
     public float botClamp = 50f;
 
     [Header("Misc")]
+    Camera mainCam;
     public GameObject camHolder;
     float xAxisClamp;
     public bool mouseClamp;
@@ -98,6 +101,8 @@ public class CameraRotation : MonoBehaviour
 
     private void Start()
     {
+        mainCam = Camera.main;
+        maxFOV = mainCam.fieldOfView;
         if (mouseClamp)
         {
             Cursor.visible = false;
@@ -107,6 +112,21 @@ public class CameraRotation : MonoBehaviour
 
     private void Update()
     {
+        switch (PlayerMovement.single.pMode)
+        {
+            case PlayerMode.normal:
+                if (mainCam.fieldOfView < maxFOV)
+                {
+                    ZoomIn();
+                }
+                break;
+            case PlayerMode.aim:
+                if (mainCam.fieldOfView > minFOV)
+                {
+                    ZoomOut();
+                }
+                break;
+        }
         GetMouseInput();
         CheckForInvert();
     }
@@ -120,6 +140,16 @@ public class CameraRotation : MonoBehaviour
     {
         SetHorizontalAxis(Input.GetAxis("Mouse X") * GetXSensitivity() * Time.deltaTime * mouseRotateSpeed);
         SetVerticalAxis(Input.GetAxis("Mouse Y") * GetYSensitivity() * Time.deltaTime * mouseRotateSpeed);
+    }
+
+    public void ZoomIn()
+    {
+        mainCam.fieldOfView++;
+    }
+
+    public void ZoomOut()
+    {
+        mainCam.fieldOfView--;
     }
 
     private void CheckForInvert()
