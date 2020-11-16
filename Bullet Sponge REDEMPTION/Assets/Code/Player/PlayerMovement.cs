@@ -4,9 +4,24 @@ using UnityEngine;
 
 public class PlayerMovement : MovementBase
 {
+    public PlayerMode pMode;
+    public static PlayerMovement single;
     public GameObject playerModel;
     Vector3 move = Vector3.zero;
     PlayerRotation pRot;
+
+    private void Awake()
+    {
+        if (!single)
+        {
+            single = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+    }
 
     private void Start()
     {
@@ -16,6 +31,7 @@ public class PlayerMovement : MovementBase
     private void Update()
     {
         CollectInputs();
+        move = pRot.GetDirection(GetHor(), GetVer());
 
         CheckIfOnGround(bottemOfCharacter);
 
@@ -31,7 +47,7 @@ public class PlayerMovement : MovementBase
 
     public void LateUpdate()
     {
-        if (!IsMoving())
+        if (!IsMoving() || pMode != PlayerMode.normal)
         {
             Vector3 rot = Quaternion.Slerp(playerModel.transform.rotation, pRot.camHolder.rotation, Time.deltaTime * pRot.rotateSpeed).eulerAngles;
             Quaternion correctPlayerRot = Quaternion.Euler(0f, rot.y, 0f);
@@ -52,20 +68,18 @@ public class PlayerMovement : MovementBase
     public void ApplyInputs()
     {
         ApplyGravity();
-        ApplyMovement(GetHor(), GetVer());
+        ApplyMovement();
     }
 
-    public void ApplyMovement(float horizontalInput, float verticalInput)
+    public void ApplyMovement()
     {
-        move = pRot.GetDirection(horizontalInput, verticalInput);
-       
         if (RunningCheck())
         {
             TranslateMovement(move,sprintSpeed);
         }
         else
         {
-            TranslateMovement(move,sprintSpeed);
+            TranslateMovement(move,walkSpeed);
         }
     }
 
@@ -113,4 +127,9 @@ public class PlayerMovement : MovementBase
         GetRigidbody().velocity = Vector3.zero;
         GetRigidbody().velocity = Vector3.up * -jumpVelocity * Physics.gravity.y;
     }
+}
+
+public enum PlayerMode
+{
+    normal,aim,fire
 }

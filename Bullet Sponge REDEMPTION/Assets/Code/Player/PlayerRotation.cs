@@ -39,7 +39,6 @@ public class PlayerRotation : MonoBehaviour
             }
         }
         walkDir.y = 0f;
-        walkDir.Normalize();
 
         return walkDir;
     }
