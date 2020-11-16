@@ -21,6 +21,52 @@ public class MenuManager : MonoBehaviour
         }
     }
     #endregion
+    public GameObject titleScreen;
+    public GameObject mainMenuScreen;
+    public GameObject pauseScreen;
+
+    public Text[] Titeles;
+    public GameObject[] SettingTabs;
+
+    public AudioManager audioManager;
+    bool paused;
+
+    private void Start()
+    {
+        audioManager = AudioManager.single;
+    }
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Pause"))
+        {
+            paused = !paused;
+        }
+        if (paused)
+        {
+            PauseGame();
+        }
+        else if(!mainMenuScreen.activeSelf && !titleScreen.activeSelf)
+        {
+            UnPauseGame();
+        }
+    }
+
+    public void TurnOffAllTitles()
+    {
+        foreach (Text title in Titeles)
+        {
+            title.gameObject.SetActive(false);
+        }
+    }
+
+    public void TurnOffAllSettingTabs()
+    {
+        foreach (GameObject settingTab in SettingTabs)
+        {
+            settingTab.SetActive(false);
+        }
+    }
 
     #region MainMenu
     public void StartGame()
@@ -34,7 +80,30 @@ public class MenuManager : MonoBehaviour
     #endregion
 
     #region PauseMenu
-    
+    public void PauseGame()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+        Time.timeScale = 0f;
+        pauseScreen.SetActive(true);
+    }
+
+    public void UnPauseGame()
+    {
+        paused = false;
+
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
+        Time.timeScale = 1f;
+        pauseScreen.SetActive(false);
+    }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
     #endregion
 
     #region QualitySettings
@@ -74,6 +143,7 @@ public class MenuManager : MonoBehaviour
             }
         }
     }
+
     public void SetUpQualitySettings(Dropdown qualitySettings)
     {
         QualityNames = QualitySettings.names;
@@ -117,15 +187,47 @@ public class MenuManager : MonoBehaviour
     #endregion
 
     #region AudioSettings
-    public void GetCurrentVolume()
-    {
 
-    }
+    //public void GetCurrentMasterVolume(Slider masterSlider)
+    //{
+    //    string group = audioManager.master.ToString();
+    //    masterSlider.value = audioManager.master//PlayerPrefs.GetFloat(group);
+    //}
 
-    public void SetVolume()
-    {
+    //public void SetMasterVolume(float value)
+    //{
+    //    string group = audioManager.master.ToString();
+    //    AudioManager.single.audioMixer.SetFloat(group, Mathf.Log10(value) * 20);
+    //    PlayerPrefs.SetFloat(group, value);
+    //}
 
-    }
+    //public void GetCurrentMusicVolume(Slider musicSlider)
+    //{
+    //    string group = audioManager.music.ToString();
+    //    musicSlider.value = PlayerPrefs.GetFloat(group);
+    //}
+
+    //public void SetMusicVolume(float value)
+    //{
+    //    string group = audioManager.music.ToString();
+    //    AudioManager.single.audioMixer.SetFloat(group, Mathf.Log10(value) * 20);
+    //    PlayerPrefs.SetFloat(group, value);
+    //}
+
+    //public void GetCurrentSfxVolume(Slider sfxSlider)
+    //{
+    //    string group = audioManager.sfx.ToString();
+    //    sfxSlider.value = PlayerPrefs.GetFloat(group);
+    //}
+
+    //public void SetSfxVolume(float value)
+    //{
+    //    string group = audioManager.sfx.ToString();
+    //    AudioManager.single.audioMixer.SetFloat(group, Mathf.Log10(value) * 20);
+    //    PlayerPrefs.SetFloat(group, value);
+    //}
+
+
     #endregion
 
     #region KeyBinds

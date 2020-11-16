@@ -8,15 +8,16 @@ public class PlayerRotation : MonoBehaviour
 {
     Vector3 walkDir = Vector3.zero;
 
+    public float rotateSpeed;
     public Transform camHolder;
 
     public  Vector3 GetDirection(float floatX, float floatZ)
     {
         walkDir = Vector3.zero;
 
-        if (!Mathf.Approximately(floatX, 0))
+        if (floatX != 0f)
         {
-            if(floatX > 0)
+            if(floatX > 0f)
             {
                 walkDir += camHolder.right * floatX;
             }
@@ -26,9 +27,9 @@ public class PlayerRotation : MonoBehaviour
             }
         }
 
-        if(!Mathf.Approximately(floatZ, 0))
+        if(floatZ != 0f)
         {
-            if (floatZ > 0)
+            if (floatZ > 0f)
             {
                 walkDir += camHolder.forward * floatZ;
             }
@@ -37,7 +38,7 @@ public class PlayerRotation : MonoBehaviour
                 walkDir -= camHolder.forward * -floatZ;
             }
         }
-        walkDir.y = 0;
+        walkDir.y = 0f;
         walkDir.Normalize();
 
         return walkDir;
@@ -47,8 +48,10 @@ public class PlayerRotation : MonoBehaviour
     {
         if (lookDir != Vector3.zero)
         {
-            Quaternion dirWeWant = Quaternion.LookRotation(lookDir);
-            player.transform.rotation = dirWeWant;
+            Quaternion lookRotation = Quaternion.LookRotation(lookDir);
+            Vector3 rot = Quaternion.Slerp(player.transform.rotation, lookRotation, Time.deltaTime * rotateSpeed).eulerAngles;
+            Quaternion correctPlayerRot = Quaternion.Euler(rot.x, rot.y, 0f);
+            player.transform.rotation = correctPlayerRot;
         }
     }
 

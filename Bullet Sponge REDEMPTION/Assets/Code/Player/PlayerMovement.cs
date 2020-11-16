@@ -5,6 +5,13 @@ using UnityEngine;
 public class PlayerMovement : MovementBase
 {
     public GameObject playerModel;
+    Vector3 move = Vector3.zero;
+    PlayerRotation pRot;
+
+    private void Start()
+    {
+         pRot = GetComponent<PlayerRotation>();
+    }
 
     private void Update()
     {
@@ -22,6 +29,20 @@ public class PlayerMovement : MovementBase
         ApplyInputs();
     }
 
+    public void LateUpdate()
+    {
+        if (!IsMoving())
+        {
+            Vector3 rot = Quaternion.Slerp(playerModel.transform.rotation, pRot.camHolder.rotation, Time.deltaTime * pRot.rotateSpeed).eulerAngles;
+            Quaternion correctPlayerRot = Quaternion.Euler(0f, rot.y, 0f);
+            playerModel.transform.rotation = correctPlayerRot;
+            return;
+        }
+
+        pRot.SetPlayerRotation(move, playerModel);
+
+    }
+
     private void CollectInputs()
     {
         SetHor(Input.GetAxis("Horizontal"));
@@ -36,30 +57,21 @@ public class PlayerMovement : MovementBase
 
     public void ApplyMovement(float horizontalInput, float verticalInput)
     {
-        PlayerRotation pRot = GetComponent<PlayerRotation>();
-
-        Vector3 move = pRot.GetDirection(horizontalInput, verticalInput);
-
-        if (!IsMoving())
-        {
-            return;
-        }
-
-        pRot.SetPlayerRotation(move, playerModel);
-
+        move = pRot.GetDirection(horizontalInput, verticalInput);
+       
         if (RunningCheck())
         {
-            TranslateMovement(sprintSpeed);
+            TranslateMovement(move,sprintSpeed);
         }
         else
         {
-            TranslateMovement(sprintSpeed);
+            TranslateMovement(move,sprintSpeed);
         }
     }
 
-    public void TranslateMovement(float multiplier)
+    public void TranslateMovement(Vector3 dir,float multiplier)
     {
-        transform.Translate(playerModel.transform.forward * Time.deltaTime * multiplier);
+        transform.Translate(dir * Time.deltaTime * multiplier);
     }
 
     public bool RunningCheck()

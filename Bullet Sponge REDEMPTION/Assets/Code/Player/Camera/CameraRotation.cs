@@ -107,19 +107,19 @@ public class CameraRotation : MonoBehaviour
 
     private void Update()
     {
-        SetHorizontalAxis(Input.GetAxis("Mouse X") * GetXSensitivity() * Time.deltaTime * mouseRotateSpeed);
-        SetVerticalAxis(Input.GetAxis("Mouse Y") * GetYSensitivity() * Time.deltaTime * mouseRotateSpeed);
+        GetMouseInput();
         CheckForInvert();
     }
 
     void FixedUpdate()
     {
-        GetMouseInput();
+        ApplyMouseRotation();
     }
 
     public void  GetMouseInput()
     {
-        ApplyMouseRotation();
+        SetHorizontalAxis(Input.GetAxis("Mouse X") * GetXSensitivity() * Time.deltaTime * mouseRotateSpeed);
+        SetVerticalAxis(Input.GetAxis("Mouse Y") * GetYSensitivity() * Time.deltaTime * mouseRotateSpeed);
     }
 
     private void CheckForInvert()
