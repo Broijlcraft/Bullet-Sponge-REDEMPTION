@@ -62,9 +62,11 @@ public class NoClipMovement : MonoBehaviour {
             newPos *= GetSprint();
             transform.Translate(newPos);
 
-            Vector3 newRot = new Vector3(mouseY, mouseX) * turnSpeed * Time.deltaTime;
-            newRot += transform.rotation.eulerAngles;
-            transform.rotation = Quaternion.Euler(newRot);
+            Vector3 horRot = new Vector3(mouseY, 0f, 0f) * turnSpeed * Time.deltaTime;
+            Vector3 verRot = new Vector3(0f, mouseX, 0f) * turnSpeed * Time.deltaTime;
+
+            transform.Rotate(horRot);
+            transform.Rotate(verRot, Space.World);
         }
     }
 
