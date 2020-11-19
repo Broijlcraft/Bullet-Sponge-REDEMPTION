@@ -13,6 +13,7 @@ public class GunBase : MonoBehaviour
 
     public int maxBulletAmmoCount;
     public int bulletsPerShot = 1;
+    public float bulletSpread;
 
     [Header("Misc")]
     public float hitMarkTimer = 5f;
@@ -23,7 +24,13 @@ public class GunBase : MonoBehaviour
     public GameObject crossHair;
     Quaternion startingRot;
 
+    protected const PlayerMode playerModenormal = PlayerMode.normal;
+    protected const PlayerMode playerModeAim = PlayerMode.aim;
+    protected const PlayerMode playerModeFire = PlayerMode.fire;
+
+    protected PlayerMovement player;
     protected bool coolDown;
+    protected bool holding;
     protected int currentBulletAmmoCount;
 
     #region Get
@@ -42,6 +49,7 @@ public class GunBase : MonoBehaviour
 
     private void Start()
     {
+        player = PlayerMovement.single;
         currentBulletAmmoCount = maxBulletAmmoCount;
         UpdateBulletCounter();
         startingRot = transform.localRotation;
@@ -49,7 +57,7 @@ public class GunBase : MonoBehaviour
 
     public virtual void Update()
     {
-        if(PlayerMovement.single.pMode != PlayerMode.normal)
+        if (player.pMode != playerModenormal)
         {
             SetGunRotation();
         }
@@ -60,16 +68,33 @@ public class GunBase : MonoBehaviour
 
         if (Input.GetButton("Fire2"))
         {
-            PlayerMovement.single.pMode = PlayerMode.aim;
+            player.pMode = playerModeAim;
         }
         else if(Input.GetButtonUp("Fire2"))
         {
-            PlayerMovement.single.pMode = PlayerMode.normal;
+            player.pMode = playerModenormal;
         }
 
+        if (Input.GetButtonUp("Fire1"))
+        {
+            if(player.pMode == PlayerMode.fire || !IsInvoking(nameof(Reload)))
+            {
+                player.pMode = playerModenormal;
+            }
+            if(holding || IsInvoking(nameof(IHold)))
+            {
+                CancelInvoke(nameof(IHold));
+                holding = false;
+            }
+        }
+
+        if (Input.GetButtonDown("Reload") && GetCurrentBulletAmount() < maxBulletAmmoCount && !IsInvoking(nameof(Reload)))
+        {
+            Invoke(nameof(Reload), reloadSpeed);
+        }
     }
 
-    private void SetGunRotation()
+    protected void SetGunRotation()
     {
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out RaycastHit crossHit, range, gunLayer))
         {
@@ -79,53 +104,64 @@ public class GunBase : MonoBehaviour
         }
     }
 
-    public virtual void CoolDown()
+    protected virtual void CoolDown()
     {
         coolDown = false;
     }
 
-    public virtual void Fire()
+    protected virtual void Fire()
     {
         SetGunRotation();
         if (Physics.Raycast(firePoint.position, firePoint.forward, out RaycastHit hit, range, gunLayer))
         {
-            GameObject newDecal = Instantiate(bulletHole, hit.point, hit.transform.rotation);
-            Destroy(newDecal, hitMarkTimer);
+            SpawnHitMark(hit);
         }
         coolDown = true;
-        Invoke(nameof(CoolDown), fireRate);
     }
 
-    public virtual void SpreadShot()
+    protected virtual void SpreadShot()
     {
         SetGunRotation();
         for (int i = 0; i < bulletsPerShot; i++)
         {
             Vector3 dir = firePoint.transform.forward;
             Vector3 spread = Vector3.zero;
-            spread += firePoint.transform.up * Random.Range(-.5f, .5f);
-            spread += firePoint.transform.right * Random.Range(-.5f, .5f);
+            float newBulletspread = bulletSpread;
+            if(player.pMode == PlayerMode.aim)
+            {
+                newBulletspread *= .5f;
+            }
+            
+            spread += firePoint.transform.up * Random.Range(-newBulletspread, newBulletspread);
+            spread += firePoint.transform.right * Random.Range(-newBulletspread, newBulletspread);
+            
 
             dir += spread.normalized * Random.Range(0f, 0.2f);
 
             if (Physics.Raycast(firePoint.position,dir, out RaycastHit hit, range, gunLayer))
             {
-                GameObject newDecal = Instantiate(bulletHole, hit.point, hit.transform.rotation);
-                Destroy(newDecal, hitMarkTimer);
-            }
-            else
-            {
-                Debug.DrawRay(firePoint.transform.position, dir * range, Color.red);
+                SpawnHitMark(hit);
             }
         }
         coolDown = true;
         Invoke(nameof(CoolDown), fireRate);
     }
 
-    public virtual void Reload()
+    protected virtual void Reload()
     {
-        currentBulletAmmoCount = maxBulletAmmoCount;
+        SetCurrentBulletAmount(maxBulletAmmoCount);
         UpdateBulletCounter();
+    }
+
+    private void SpawnHitMark(RaycastHit hit)
+    {
+        GameObject newDecal = Instantiate(bulletHole, hit.point + -bulletHole.transform.forward * 0.1f, hit.transform.rotation);
+        Destroy(newDecal, hitMarkTimer);
+    }
+
+    protected void IHold()
+    {
+        holding = true;
     }
 
     public void UpdateBulletCounter()

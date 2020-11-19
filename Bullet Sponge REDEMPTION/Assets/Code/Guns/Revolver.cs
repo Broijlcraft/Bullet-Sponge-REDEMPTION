@@ -8,26 +8,40 @@ public class Revolver : GunBase
     public override void Update()
     {
         base.Update();
+        if (Input.GetButtonDown("Fire1"))
+        {
+            if (player.pMode != playerModeAim)
+            {
+                Debug.Log("Changing Mode");
+                player.pMode = playerModeFire;
+            }
+            if (GetCurrentBulletAmount() > 0)
+            {
+                Fire();
+                Invoke(nameof(CoolDown), 0.1f);
+                Debug.Log("Fire once");
+                SetCurrentBulletAmount(GetCurrentBulletAmount() - 1);
+            }
+        }
         if (Input.GetButton("Fire1"))
         {
-            if(PlayerMovement.single.pMode != PlayerMode.aim)
+            if (!holding || !IsInvoking(nameof(IHold)))
             {
-                PlayerMovement.single.pMode = PlayerMode.fire;
+                Invoke(nameof(IHold),fireRate);
+                return;
+            }
+            if(player.pMode != playerModeAim)
+            {
+                Debug.Log("Changing Mode");
+                player.pMode = playerModeFire;
             }
             if (GetCurrentBulletAmount() > 0 && !IsInvoking(nameof(CoolDown)))
             {
                 Fire();
+                Invoke(nameof(CoolDown), fireRate);
+                Debug.Log("Keep Firing");
                 SetCurrentBulletAmount(GetCurrentBulletAmount() - 1);
             }
-        }else if (Input.GetButtonUp("Fire1"))
-        {
-            PlayerMovement.single.pMode = PlayerMode.normal;
-        }
-
-        if (Input.GetButtonDown("Reload") && GetCurrentBulletAmount() < maxBulletAmmoCount && !IsInvoking(nameof(Reload)))
-        {
-            Invoke(nameof(Reload), reloadSpeed);
         }
     }
-    
 }

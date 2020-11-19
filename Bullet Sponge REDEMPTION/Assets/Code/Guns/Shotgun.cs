@@ -7,26 +7,38 @@ public class Shotgun : GunBase
     public override void Update()
     {
         base.Update();
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
-            if (PlayerMovement.single.pMode != PlayerMode.aim)
+            if (player.pMode != playerModeAim)
             {
-                PlayerMovement.single.pMode = PlayerMode.fire;
+                Debug.Log("Changing Mode");
+                player.pMode = playerModeFire;
             }
             if (GetCurrentBulletAmount() > 0 && !IsInvoking(nameof(CoolDown)))
             {
                 SpreadShot();
+                Invoke(nameof(CoolDown), fireRate);
                 SetCurrentBulletAmount(GetCurrentBulletAmount() - 1);
             }
         }
-        else if (Input.GetButtonUp("Fire1"))
+        if (Input.GetButton("Fire1"))
         {
-            PlayerMovement.single.pMode = PlayerMode.normal;
-        }
-
-        if (Input.GetButtonDown("Reload") && GetCurrentBulletAmount() < maxBulletAmmoCount && !IsInvoking(nameof(Reload)))
-        {
-            Invoke(nameof(Reload), reloadSpeed);
+            if (!holding || !IsInvoking(nameof(IHold)))
+            {
+                Invoke(nameof(IHold), fireRate);
+                return;
+            }
+            if (player.pMode != playerModeAim)
+            {
+                Debug.Log("Changing Mode");
+                player.pMode = playerModeFire;
+            }
+            if (GetCurrentBulletAmount() > 0 && !IsInvoking(nameof(CoolDown)))
+            {
+                SpreadShot();
+                Invoke(nameof(CoolDown), fireRate + 1f);
+                SetCurrentBulletAmount(GetCurrentBulletAmount() - 1);
+            }
         }
     }
 }

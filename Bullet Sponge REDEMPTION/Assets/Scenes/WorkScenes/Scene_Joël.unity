@@ -442,6 +442,7 @@ MonoBehaviour:
   range: 90
   maxBulletAmmoCount: 7
   bulletsPerShot: 1
+  bulletSpread: 0
   hitMarkTimer: 3
   gunLayer:
     serializedVersion: 2
@@ -1675,7 +1676,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseRotateSpeed: 270
-  maxFOV: 0
   minFOV: 40
   topClamp: 50
   botClamp: 50
@@ -1742,10 +1742,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reloadSpeed: 1
   damageAmount: 0
-  fireRate: 2
+  fireRate: 1
   range: 45
   maxBulletAmmoCount: 5
   bulletsPerShot: 10
+  bulletSpread: 0.5
   hitMarkTimer: 5
   gunLayer:
     serializedVersion: 2
