@@ -1677,6 +1677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseRotateSpeed: 270
   minFOV: 40
+  zoomAmount: 100
   topClamp: 50
   botClamp: 50
   camHolder: {fileID: 1640791957}

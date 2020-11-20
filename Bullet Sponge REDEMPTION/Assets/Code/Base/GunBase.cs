@@ -75,7 +75,7 @@ public class GunBase : MonoBehaviour
             player.pMode = playerModenormal;
         }
 
-        if (Input.GetButtonUp("Fire1"))
+        if (Input.GetButtonUp("Fire1") && player.pMode != playerModeAim)
         {
             if(player.pMode == PlayerMode.fire || !IsInvoking(nameof(Reload)))
             {

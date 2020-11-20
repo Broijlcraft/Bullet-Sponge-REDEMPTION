@@ -30,6 +30,7 @@ public class PlayerMovement : MovementBase
 
     private void Update()
     {
+        Debug.Log(pMode);
         CollectInputs();
         move = pRot.GetDirection(GetHor(), GetVer());
 

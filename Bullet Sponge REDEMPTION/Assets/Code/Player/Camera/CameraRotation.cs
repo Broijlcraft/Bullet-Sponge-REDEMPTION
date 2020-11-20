@@ -8,6 +8,7 @@ public class CameraRotation : MonoBehaviour
     [Header("CameraSettings")]
     public float mouseRotateSpeed;
     public float minFOV;
+    public float zoomAmount;
     float maxFOV;
 
     [Header("Clamp Settings")]
@@ -19,9 +20,10 @@ public class CameraRotation : MonoBehaviour
     public GameObject camHolder;
     float xAxisClamp;
     public bool mouseClamp;
-
-    protected float cHor, cVer;
     public float mouseXSensitivity, mouseYSensitivity;
+
+    private bool maxZoomHit;
+    protected float cHor, cVer;
     protected bool mouseXInvert, mouseYInvert;
 
     #region Get & Set
@@ -115,15 +117,20 @@ public class CameraRotation : MonoBehaviour
         switch (PlayerMovement.single.pMode)
         {
             case PlayerMode.normal:
-                if (mainCam.fieldOfView < maxFOV)
+                if (mainCam.fieldOfView < maxFOV && !maxZoomHit)
                 {
                     ZoomIn();
+                }
+                else
+                {
+                    maxZoomHit = true;
                 }
                 break;
             case PlayerMode.aim:
                 if (mainCam.fieldOfView > minFOV)
                 {
                     ZoomOut();
+                    maxZoomHit = false;
                 }
                 break;
         }
@@ -144,12 +151,12 @@ public class CameraRotation : MonoBehaviour
 
     public void ZoomIn()
     {
-        mainCam.fieldOfView++;
+        mainCam.fieldOfView += zoomAmount * Time.deltaTime;
     }
 
     public void ZoomOut()
     {
-        mainCam.fieldOfView--;
+        mainCam.fieldOfView -= zoomAmount * Time.deltaTime;
     }
 
     private void CheckForInvert()
