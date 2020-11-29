@@ -130,15 +130,10 @@ public class MovementBase : MonoBehaviour
     }
 
     Vector3 lastPosOnMap = Vector3.zero;
-    public void CheckIfOnGround(Transform offset)
+    public bool CheckIfOnGround(Transform offset)
     {
         if (Physics.Raycast(offset.position,Vector3.down, out RaycastHit hit, 100f,actualGoundLayer))
         {
-            if (IsInvoking(nameof(OffMap)))
-            {
-                CancelInvoke(nameof(OffMap));
-            }
-
             float dis = Vector3.Distance(hit.point, offset.position);
 
             if(hit.transform.CompareTag("GroundSpawnPoints"))
@@ -154,13 +149,12 @@ public class MovementBase : MonoBehaviour
             {
                 isGrounded = false;
             }
+
+            return true;
         }
         else
         {
-            if (!IsInvoking(nameof(OffMap)))
-            {
-                Invoke(nameof(OffMap),RespawnDelay);
-            }
+            return false;
         }
     }
 

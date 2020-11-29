@@ -121,8 +121,14 @@ public class GunBase : MonoBehaviour
 
     protected virtual void SpreadShot()
     {
+        
         SetGunRotation();
-        for (int i = 0; i < bulletsPerShot; i++)
+        if (Physics.Raycast(firePoint.position, firePoint.transform.forward, out RaycastHit normalHit, range, gunLayer))
+        {
+            SpawnHitMark(normalHit);
+        }
+
+        for (int i = 0; i < bulletsPerShot-1; i++)
         {
             Vector3 dir = firePoint.transform.forward;
             Vector3 spread = Vector3.zero;
@@ -155,7 +161,9 @@ public class GunBase : MonoBehaviour
 
     private void SpawnHitMark(RaycastHit hit)
     {
-        GameObject newDecal = Instantiate(bulletHole, hit.point + -bulletHole.transform.forward * 0.1f, hit.transform.rotation);
+        Vector3 pos = hit.point;
+        Quaternion rot = Quaternion.FromToRotation(Vector3.up, hit.normal);
+        GameObject newDecal = Instantiate(bulletHole, pos, rot);
         Destroy(newDecal, hitMarkTimer);
     }
 

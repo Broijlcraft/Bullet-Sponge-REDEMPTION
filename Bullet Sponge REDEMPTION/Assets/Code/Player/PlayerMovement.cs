@@ -30,11 +30,23 @@ public class PlayerMovement : MovementBase
 
     private void Update()
     {
-        Debug.Log(pMode);
         CollectInputs();
         move = pRot.GetDirection(GetHor(), GetVer());
 
-        CheckIfOnGround(bottemOfCharacter);
+        if (CheckIfOnGround(bottemOfCharacter))
+        {
+            if (IsInvoking(nameof(OffMap)))
+            {
+                CancelInvoke(nameof(OffMap));
+            }
+        }
+        else
+        {
+            if (!IsInvoking(nameof(OffMap)))
+            {
+                Invoke(nameof(OffMap), RespawnDelay);
+            }
+        }
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
