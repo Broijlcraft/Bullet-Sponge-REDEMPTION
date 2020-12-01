@@ -32,15 +32,21 @@ public class T3RDPersonControl : MonoBehaviour {
         if(horRot > 0) {
             print(horRot * Time.deltaTime * mouseSense);
         }
-    }
-
-    private void FixedUpdate() {
         int invert = GetInvertValue();
         Vector3 newRot = new Vector3(0f, horRot, 0f);
         camHolder.Rotate(newRot * invert * mouseSense * Time.deltaTime, Space.World);
 
         newRot = new Vector3(verRot, 0f, 0f);
         camHolder.Rotate(newRot * -invert * mouseSense * Time.deltaTime);
+    }
+
+    private void FixedUpdate() {
+        //int invert = GetInvertValue();
+        //Vector3 newRot = new Vector3(0f, horRot, 0f);
+        //camHolder.Rotate(newRot * invert * mouseSense * Time.deltaTime, Space.World);
+
+        //newRot = new Vector3(verRot, 0f, 0f);
+        //camHolder.Rotate(newRot * -invert * mouseSense * Time.deltaTime);
 
         walkDir = GetDirection(hor, ver);
         transform.Translate(walkDir * walkSpeed * Time.deltaTime);
@@ -49,11 +55,9 @@ public class T3RDPersonControl : MonoBehaviour {
         Vector3 inputDir = new Vector3(horRaw, 0f, verRaw).normalized;
         Vector3 cPos = camHolder.localPosition;
 
-        Vector3 tPos = new Vector3(cPos.x+hor, cPos.y, cPos.z+ver);
+        Vector3 tPos = new Vector3(cPos.x+horRaw, cPos.y, cPos.z+verRaw);
         Vector3 cRot = new Vector3(0f, camHolder.rotation.eulerAngles.y, 0f);
 
-        target.localPosition = tPos;
-        targetHold.rotation = Quaternion.Euler(cRot);
 
         if(inputDir.magnitude >= testMagnitute) {
             //Vector3 targetRot = Vector3.zero;
@@ -76,6 +80,8 @@ public class T3RDPersonControl : MonoBehaviour {
             Quaternion newPartRotation = Quaternion.Euler(0f, newFullRot.y, 0f);
             player.rotation = newPartRotation;
         }
+        target.localPosition = tPos;
+        targetHold.rotation = Quaternion.Euler(cRot);
 
         //player.transform.rotation = Quaternion.Euler()
     }
