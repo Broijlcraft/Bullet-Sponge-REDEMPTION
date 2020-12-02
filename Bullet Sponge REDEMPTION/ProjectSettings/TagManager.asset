@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - GroundSpawnPoints
+  - Enviorment
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - Gun
   - Envoirment
   - Post Processing
-  - 
+  - Enemy
   - 
   - 
   - 

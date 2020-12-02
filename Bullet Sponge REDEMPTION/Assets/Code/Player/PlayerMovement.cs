@@ -31,8 +31,7 @@ public class PlayerMovement : MovementBase
     private void Update()
     {
         CollectInputs();
-        move = pRot.GetDirection(GetHor(), GetVer());
-
+        
         if (CheckIfOnGround(bottemOfCharacter))
         {
             if (IsInvoking(nameof(OffMap)))
@@ -56,6 +55,7 @@ public class PlayerMovement : MovementBase
     private void FixedUpdate()
     {
         ApplyInputs();
+        move = pRot.GetDirection(GetHor(), GetVer());
     }
 
     public void LateUpdate()

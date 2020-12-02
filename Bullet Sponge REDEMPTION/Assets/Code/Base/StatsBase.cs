@@ -4,19 +4,32 @@ using UnityEngine;
 
 public class StatsBase : MonoBehaviour
 {
-    public float damage;
-    public float Maxhealth;
-
+    public float maxHealth;
     protected float currentHealth;
 
-    protected float GetCurrentHealth()
+    protected virtual void Start()
+    {
+        currentHealth = maxHealth;
+    }
+
+    public float GetCurrentHealth()
     {
         float curH = currentHealth;
         return curH;
     }
 
-    protected void SetCurrentHealth(float value)
+    public void SetCurrentHealth(float value)
     {
         currentHealth = value;
+    }
+   
+    protected virtual void Death()
+    {
+        //Todo 
+        //Add Particles
+        //Add Animation
+
+        Debug.Log(gameObject.name + " Died");
+        //Destroy(gameObject);
     }
 }

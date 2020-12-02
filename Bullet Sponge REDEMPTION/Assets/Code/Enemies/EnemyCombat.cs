@@ -9,20 +9,27 @@ public class EnemyCombat : StatsBase
 {
 
     [Header("Till Animations")]
+    public float damage;
     public float attackCooldown;
 
     NavMeshAgent myAgent;
-    PlayerMovement player;
+    PlayerStats player;
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
         myAgent = GetComponent<NavMeshAgent>();
-        player = PlayerMovement.single;
+        player = PlayerStats.single;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(GetCurrentHealth() <= 0)
+        {
+            Death();
+        }
+
         if (!GetComponent<EnemyMovement>().chase)
         {
             return;
@@ -47,10 +54,11 @@ public class EnemyCombat : StatsBase
     public void Attack()
     {
         Debug.Log("Attacking");
+        player.SetCurrentHealth(player.GetCurrentHealth() - damage);
     }
 
     public void IAttackCD()
     {
-        Debug.Log("Recharge");
+        Debug.Log("AttackCD");
     }
 }

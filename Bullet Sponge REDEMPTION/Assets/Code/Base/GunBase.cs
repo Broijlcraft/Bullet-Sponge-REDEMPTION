@@ -115,6 +115,7 @@ public class GunBase : MonoBehaviour
         if (Physics.Raycast(firePoint.position, firePoint.forward, out RaycastHit hit, range, gunLayer))
         {
             SpawnHitMark(hit);
+            DamageCheck(hit);
         }
         coolDown = true;
     }
@@ -126,6 +127,7 @@ public class GunBase : MonoBehaviour
         if (Physics.Raycast(firePoint.position, firePoint.transform.forward, out RaycastHit normalHit, range, gunLayer))
         {
             SpawnHitMark(normalHit);
+            DamageCheck(normalHit);
         }
 
         for (int i = 0; i < bulletsPerShot-1; i++)
@@ -147,6 +149,7 @@ public class GunBase : MonoBehaviour
             if (Physics.Raycast(firePoint.position,dir, out RaycastHit hit, range, gunLayer))
             {
                 SpawnHitMark(hit);
+                DamageCheck(hit);
             }
         }
         coolDown = true;
@@ -161,10 +164,24 @@ public class GunBase : MonoBehaviour
 
     private void SpawnHitMark(RaycastHit hit)
     {
+        if (!hit.transform.CompareTag("Enviorment"))
+        {
+            return;
+        }
         Vector3 pos = hit.point;
         Quaternion rot = Quaternion.FromToRotation(Vector3.up, hit.normal);
         GameObject newDecal = Instantiate(bulletHole, pos, rot);
         Destroy(newDecal, hitMarkTimer);
+    }
+
+    private void DamageCheck(RaycastHit hit)
+    {
+        if (hit.transform.CompareTag("Enemy"))
+        {
+            EnemyCombat enemy = hit.transform.GetComponent<EnemyCombat>();
+            enemy.SetCurrentHealth(enemy.GetCurrentHealth() - damageAmount);
+            Debug.Log("Hit");
+        }
     }
 
     protected void IHold()
