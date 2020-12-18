@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/WorkScenes/Scene_Kubilay.unity
+    guid: f4569ae07f899164494dfdf44e3ec4de
   m_configObjects: {}
