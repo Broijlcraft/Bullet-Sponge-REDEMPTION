@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: ff5e5a8968dba494a8459b7717de1b67
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Sans Plate Caps
+  fontNames:
+  - Sans Plate Caps
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1ebbd4f73fb95434183d10d53924f04b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
