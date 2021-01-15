@@ -110,7 +110,6 @@ GameObject:
   - component: {fileID: 7804196699559680806}
   - component: {fileID: 1767372710708453109}
   - component: {fileID: 5994756084430215502}
-  - component: {fileID: 34439664350094589}
   m_Layer: 0
   m_Name: BS_Barrel1 (1)
   m_TagString: Untagged
@@ -182,21 +181,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &34439664350094589
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1480742268116899256, guid: 00795d48cce2736409cf92055b296049,
-    type: 3}
-  m_PrefabInstance: {fileID: 6251134460656716740}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 259863026850808739}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.3716193
-  m_Height: 1.2475784
-  m_Direction: 1
-  m_Center: {x: -0.00043275952, y: 0.3239094, z: 0.00081917644}
 --- !u!1 &513485006320790860
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,7 +389,6 @@ GameObject:
   - component: {fileID: 6583815094139581807}
   - component: {fileID: 1812725109174063814}
   - component: {fileID: 5184116186809047976}
-  - component: {fileID: 6076907264104381659}
   m_Layer: 0
   m_Name: BS_Barrel1
   m_TagString: Untagged
@@ -477,21 +460,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &6076907264104381659
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1480742268277553913, guid: 00795d48cce2736409cf92055b296049,
-    type: 3}
-  m_PrefabInstance: {fileID: 6251134460656716740}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148676722700884170}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.3716193
-  m_Height: 1.2475784
-  m_Direction: 1
-  m_Center: {x: -0.00043275952, y: 0.3239094, z: 0.00081917644}
 --- !u!1 &1179219199036424455
 GameObject:
   m_ObjectHideFlags: 0
@@ -3615,7 +3583,6 @@ GameObject:
   - component: {fileID: 868809654483865143}
   - component: {fileID: 1637085803470439927}
   - component: {fileID: 3443378496680666311}
-  - component: {fileID: 8031674956527555253}
   m_Layer: 0
   m_Name: BS_Barrel1 (2)
   m_TagString: Untagged
@@ -3687,21 +3654,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &8031674956527555253
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1480742267500043313, guid: 00795d48cce2736409cf92055b296049,
-    type: 3}
-  m_PrefabInstance: {fileID: 6251134460656716740}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7574467910206474090}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.3716193
-  m_Height: 1.2475784
-  m_Direction: 1
-  m_Center: {x: -0.00043275952, y: 0.3239094, z: 0.00081917644}
 --- !u!1 &7582312138595189760
 GameObject:
   m_ObjectHideFlags: 0
@@ -4906,5 +4858,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 00795d48cce2736409cf92055b296049, type: 3}

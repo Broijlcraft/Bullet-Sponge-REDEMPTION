@@ -14,7 +14,6 @@ public class LodControl : MonoBehaviour {
         while (true) {
             int i;
             for (i = 0; i < lods.Count; i++) {
-                yield return new WaitForSeconds(distanceCheckDelay);
                 LodScript lod = lods[i];
                 if (lod.DistanceBetween(transform.position) < closest) {
                     lod.Appear();

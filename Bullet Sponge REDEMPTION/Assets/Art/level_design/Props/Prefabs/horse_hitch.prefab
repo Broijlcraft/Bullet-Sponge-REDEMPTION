@@ -11,9 +11,6 @@ GameObject:
   - component: {fileID: 7237444196704195699}
   - component: {fileID: 3328638330960641382}
   - component: {fileID: 1134021178383894781}
-  - component: {fileID: 2176890274557253392}
-  - component: {fileID: 2176890274557253393}
-  - component: {fileID: 2176890274557253398}
   m_Layer: 0
   m_Name: horse_hitch
   m_TagString: Untagged
@@ -82,42 +79,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &2176890274557253392
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2176890274557253399}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.19647217, y: 1.4005145, z: 0.21488953}
-  m_Center: {x: -0.0025177002, y: 0.70025724, z: -1.1124039}
---- !u!65 &2176890274557253393
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2176890274557253399}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.19647217, y: 1.4005145, z: 0.15460205}
-  m_Center: {x: -0.0025177002, y: 0.70025724, z: 1.1196747}
---- !u!65 &2176890274557253398
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2176890274557253399}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.3101338, y: 0.268929, z: 3.118898}
-  m_Center: {x: 0.000010192394, y: 1.2660501, z: -0.010311365}
