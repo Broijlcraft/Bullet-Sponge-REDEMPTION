@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LodScript : MonoBehaviour {
     [SerializeField] private Animator anim;
+    private bool appear, disappear;
 
     private void Reset() {
         anim = GetComponent<Animator>();
@@ -15,15 +16,23 @@ public class LodScript : MonoBehaviour {
 
     public void Appear() {
         if (anim) {
-            anim.ResetTrigger("Disappear");
-            anim.SetTrigger("Appear");
+            if (!appear) {
+                appear = true;
+                anim.ResetTrigger("Disappear");
+                anim.SetTrigger("Appear");
+                disappear = false;
+            }
         }
     }
 
     public void Disappear() {
         if (anim) {
-            anim.ResetTrigger("Appear");
-            anim.SetTrigger("Disappear");
+            if (!disappear) {
+                disappear = true;
+                anim.ResetTrigger("Appear");
+                anim.SetTrigger("Disappear");
+                appear = false;
+            }
         }
     }
 }
