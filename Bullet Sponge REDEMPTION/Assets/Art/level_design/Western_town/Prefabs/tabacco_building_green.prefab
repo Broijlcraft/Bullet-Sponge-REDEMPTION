@@ -15,7 +15,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4255902786778540043
 Transform:
@@ -65,7 +65,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4774882789315441222
 Transform:
@@ -247,7 +247,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2024350379926090250
 Transform:
@@ -529,6 +529,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BS_plank (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8731993454391317946, guid: 4a31b5f6452dedd44a069208cc6eed73,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a31b5f6452dedd44a069208cc6eed73, type: 3}
 --- !u!4 &8191022006923408140 stripped
@@ -603,6 +608,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BS_crate1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763479729319064099, guid: be81f4e549251344caa9735077c4b2dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be81f4e549251344caa9735077c4b2dd, type: 3}
@@ -679,6 +689,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BS_crate1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8763479729319064099, guid: be81f4e549251344caa9735077c4b2dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be81f4e549251344caa9735077c4b2dd, type: 3}
 --- !u!4 &8837982829521944787 stripped
@@ -753,6 +768,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BS_crate1 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763479729319064099, guid: be81f4e549251344caa9735077c4b2dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be81f4e549251344caa9735077c4b2dd, type: 3}
@@ -829,6 +849,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BS_crate1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8763479729319064099, guid: be81f4e549251344caa9735077c4b2dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be81f4e549251344caa9735077c4b2dd, type: 3}
 --- !u!4 &7177965276082007023 stripped
@@ -904,6 +929,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BS_RUM1
       objectReference: {fileID: 0}
+    - target: {fileID: 1003029513672730034, guid: e657c3e15705cad46b99ed58f5bf0c9d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e657c3e15705cad46b99ed58f5bf0c9d, type: 3}
 --- !u!4 &2299731197863933651 stripped
@@ -923,6 +953,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BS_Barrel1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8373544780279904105, guid: a7f007dbc41131345bec9a24f1bdb59d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9187094957471083987, guid: a7f007dbc41131345bec9a24f1bdb59d,
         type: 3}
@@ -1054,6 +1089,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BS_barel2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5325771505407988270, guid: edaa55ad1a1cf764287f002d13bc6032,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edaa55ad1a1cf764287f002d13bc6032, type: 3}
 --- !u!4 &7161676428953154907 stripped
@@ -1129,6 +1169,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BS_crate1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8763479729319064099, guid: be81f4e549251344caa9735077c4b2dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be81f4e549251344caa9735077c4b2dd, type: 3}
 --- !u!4 &5803845156363039282 stripped
@@ -1203,6 +1248,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BS_crate1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763479729319064099, guid: be81f4e549251344caa9735077c4b2dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be81f4e549251344caa9735077c4b2dd, type: 3}
@@ -1288,6 +1338,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BS_plank (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8731993454391317946, guid: 4a31b5f6452dedd44a069208cc6eed73,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a31b5f6452dedd44a069208cc6eed73, type: 3}
@@ -1379,6 +1434,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BS_plank (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8731993454391317946, guid: 4a31b5f6452dedd44a069208cc6eed73,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a31b5f6452dedd44a069208cc6eed73, type: 3}
 --- !u!4 &4843050834740969929 stripped
@@ -1453,6 +1513,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BS_crate1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763479729319064099, guid: be81f4e549251344caa9735077c4b2dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be81f4e549251344caa9735077c4b2dd, type: 3}
@@ -1544,6 +1609,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BS_plank
       objectReference: {fileID: 0}
+    - target: {fileID: 8731993454391317946, guid: 4a31b5f6452dedd44a069208cc6eed73,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a31b5f6452dedd44a069208cc6eed73, type: 3}
 --- !u!4 &4865913312755816764 stripped
@@ -1563,6 +1633,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BS_Barrel1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8373544780279904105, guid: a7f007dbc41131345bec9a24f1bdb59d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9187094957471083987, guid: a7f007dbc41131345bec9a24f1bdb59d,
         type: 3}
@@ -1694,6 +1769,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BS_crate1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8763479729319064099, guid: be81f4e549251344caa9735077c4b2dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be81f4e549251344caa9735077c4b2dd, type: 3}
 --- !u!4 &5449153934099080273 stripped
@@ -1769,6 +1849,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BS_bench met leuning
       objectReference: {fileID: 0}
+    - target: {fileID: 8661485227208240140, guid: e205207bd3389d0499be1c64c48c29c2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e205207bd3389d0499be1c64c48c29c2, type: 3}
 --- !u!4 &5325646348848469999 stripped
@@ -1788,6 +1873,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BS_Barrel1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8373544780279904105, guid: a7f007dbc41131345bec9a24f1bdb59d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9187094957471083987, guid: a7f007dbc41131345bec9a24f1bdb59d,
         type: 3}
@@ -1934,6 +2024,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BS_plank (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8731993454391317946, guid: 4a31b5f6452dedd44a069208cc6eed73,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a31b5f6452dedd44a069208cc6eed73, type: 3}
 --- !u!4 &5558903801777257416 stripped
@@ -2008,6 +2103,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BS_crate1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763479729319064099, guid: be81f4e549251344caa9735077c4b2dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be81f4e549251344caa9735077c4b2dd, type: 3}
@@ -2084,6 +2184,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BS_lamp1
       objectReference: {fileID: 0}
+    - target: {fileID: 6453370201877456105, guid: 5eb8b98ddf5560b4c99be1d25138927c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8634779412026114501, guid: 5eb8b98ddf5560b4c99be1d25138927c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eb8b98ddf5560b4c99be1d25138927c, type: 3}
 --- !u!4 &1325070557291604038 stripped
@@ -2159,6 +2269,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BS_crate1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8763479729319064099, guid: be81f4e549251344caa9735077c4b2dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be81f4e549251344caa9735077c4b2dd, type: 3}
 --- !u!4 &4247166243671141895 stripped
@@ -2178,6 +2293,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BS_Barrel1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8373544780279904105, guid: a7f007dbc41131345bec9a24f1bdb59d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9187094957471083987, guid: a7f007dbc41131345bec9a24f1bdb59d,
         type: 3}
@@ -2314,6 +2434,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BS_plank (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8731993454391317946, guid: 4a31b5f6452dedd44a069208cc6eed73,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a31b5f6452dedd44a069208cc6eed73, type: 3}
 --- !u!4 &2837939220590852788 stripped
@@ -2389,6 +2514,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BS_crate1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8763479729319064099, guid: be81f4e549251344caa9735077c4b2dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be81f4e549251344caa9735077c4b2dd, type: 3}
 --- !u!4 &2708695397723405457 stripped
@@ -2408,6 +2538,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BS_Barrel1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8373544780279904105, guid: a7f007dbc41131345bec9a24f1bdb59d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9187094957471083987, guid: a7f007dbc41131345bec9a24f1bdb59d,
         type: 3}
@@ -2539,6 +2674,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BS_crate1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8763479729319064099, guid: be81f4e549251344caa9735077c4b2dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be81f4e549251344caa9735077c4b2dd, type: 3}
 --- !u!4 &3007943242310109863 stripped
@@ -2613,6 +2753,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BS_barel2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5325771505407988270, guid: edaa55ad1a1cf764287f002d13bc6032,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edaa55ad1a1cf764287f002d13bc6032, type: 3}
@@ -2699,6 +2844,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BS_plank (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8731993454391317946, guid: 4a31b5f6452dedd44a069208cc6eed73,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a31b5f6452dedd44a069208cc6eed73, type: 3}
 --- !u!4 &1543207559882584288 stripped
@@ -2773,6 +2923,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BS_barel2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5325771505407988270, guid: edaa55ad1a1cf764287f002d13bc6032,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edaa55ad1a1cf764287f002d13bc6032, type: 3}
@@ -2849,6 +3004,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BS_RUM1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1003029513672730034, guid: e657c3e15705cad46b99ed58f5bf0c9d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e657c3e15705cad46b99ed58f5bf0c9d, type: 3}
 --- !u!4 &8028788398477413625 stripped
@@ -2868,6 +3028,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BS_Barrel1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8373544780279904105, guid: a7f007dbc41131345bec9a24f1bdb59d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9187094957471083987, guid: a7f007dbc41131345bec9a24f1bdb59d,
         type: 3}
@@ -2999,6 +3164,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BS_crate1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8763479729319064099, guid: be81f4e549251344caa9735077c4b2dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be81f4e549251344caa9735077c4b2dd, type: 3}
 --- !u!4 &2185131950656390562 stripped
@@ -3073,6 +3243,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BS_crate1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763479729319064099, guid: be81f4e549251344caa9735077c4b2dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be81f4e549251344caa9735077c4b2dd, type: 3}
@@ -3149,6 +3324,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BS_crate1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8763479729319064099, guid: be81f4e549251344caa9735077c4b2dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be81f4e549251344caa9735077c4b2dd, type: 3}
 --- !u!4 &358112763027439058 stripped
@@ -3223,6 +3403,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BS_crate1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763479729319064099, guid: be81f4e549251344caa9735077c4b2dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be81f4e549251344caa9735077c4b2dd, type: 3}
