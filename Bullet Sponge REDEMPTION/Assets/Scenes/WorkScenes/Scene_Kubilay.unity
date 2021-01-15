@@ -6118,6 +6118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 138911062}
   - component: {fileID: 138911061}
+  - component: {fileID: 138911063}
   m_Layer: 0
   m_Name: BGM
   m_TagString: Untagged
@@ -6235,6 +6236,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &138911063
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138911060}
+  m_Enabled: 1
 --- !u!1 &140897143
 GameObject:
   m_ObjectHideFlags: 0
@@ -27408,13 +27417,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894883030}
-  m_LocalRotation: {x: -0.003952667, y: -0.7199745, z: -0.0045264433, w: -0.6939745}
-  m_LocalPosition: {x: -165.9, y: -5.4, z: -46}
+  m_LocalRotation: {x: 0.0038689491, y: 0.7070962, z: 0.004597181, w: 0.7070918}
+  m_LocalPosition: {x: -222.3, y: -9.73, z: -43.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606467944}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -0.059000004, y: 92.107, z: 0.68600005}
+  m_LocalEulerAnglesHint: {x: -0.059000004, y: 90, z: 0.68600005}
 --- !u!114 &894883032
 MonoBehaviour:
   m_ObjectHideFlags: 0
