@@ -15,14 +15,12 @@ public class LodScript : MonoBehaviour {
 
     public void Appear() {
         if (anim) {
-        print("Appear");
             anim.ResetTrigger("Disappear");
             anim.SetTrigger("Appear");
         }
     }
 
     public void Disappear() {
-        print("Disappear");
         if (anim) {
             anim.ResetTrigger("Appear");
             anim.SetTrigger("Disappear");
