@@ -32,8 +32,8 @@ public class NoClipMovement : MonoBehaviour {
         if (buttonDown) {
             hor = Input.GetAxis("Horizontal");
             vert = Input.GetAxis("Vertical");
-            mouseY = -Input.GetAxis("Mouse Y");
-            mouseX = Input.GetAxis("Mouse X");
+            mouseY = -Input.GetAxisRaw("Mouse Y");
+            mouseX = Input.GetAxisRaw("Mouse X");
             upDown = Input.GetAxis("NC_UpDown");
 
             float f = Input.GetAxis("Mouse ScrollWheel");
