@@ -9,7 +9,15 @@ public class ScreenShotScript : MonoBehaviour {
 
     public void MakeScreenShot() {
         print(Application.dataPath);
-        ScreenCapture.CaptureScreenshot("Assets/ScreenShots/DevScreenShot" + Random.Range(100000000, 999999999) + System.DateTime.Now.Millisecond + ".png");
+        string s = System.DateTime.Now.Year.ToString();
+        s += System.DateTime.Now.Month.ToString();
+        s += System.DateTime.Now.Day.ToString();
+        s += System.DateTime.Now.Hour.ToString();
+        s += System.DateTime.Now.Minute.ToString();
+        s += System.DateTime.Now.Second.ToString();
+        s += System.DateTime.Now.Millisecond.ToString();
+
+        ScreenCapture.CaptureScreenshot("Assets/ScreenSHot" + s + ".png");
     }
 }
 
